@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotiDownloader", "SpotiDownloader\SpotiDownloader.csproj", "{5A38646C-9170-41B1-8A18-BD65848A2848}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotiDownloaderGUI", "SpotiDownloaderGUI\SpotiDownloaderGUI.csproj", "{3F073B6C-282D-4EBF-A763-F9702AABFB7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A38646C-9170-41B1-8A18-BD65848A2848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A38646C-9170-41B1-8A18-BD65848A2848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A38646C-9170-41B1-8A18-BD65848A2848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A38646C-9170-41B1-8A18-BD65848A2848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F073B6C-282D-4EBF-A763-F9702AABFB7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F073B6C-282D-4EBF-A763-F9702AABFB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F073B6C-282D-4EBF-A763-F9702AABFB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F073B6C-282D-4EBF-A763-F9702AABFB7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

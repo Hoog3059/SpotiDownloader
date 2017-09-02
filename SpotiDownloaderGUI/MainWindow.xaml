@@ -1,0 +1,37 @@
+﻿<Controls:MetroWindow
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpotiDownloaderGUI"
+        xmlns:awe="http://schemas.awesomium.com/winfx" x:Class="SpotiDownloaderGUI.MainWindow"
+        mc:Ignorable="d"
+        Title="SpotiDownloader" Height="508" Width="571">
+    <Grid>
+        <GroupBox Header="Settings" Margin="10,10,10,0" Height="226" VerticalAlignment="Top">
+            <Grid Margin="0,0,-12,-29">
+                <TextBox x:Name="txtUsername" Height="23" TextWrapping="Wrap" Controls:TextBoxHelper.Watermark="Username" AutomationProperties.IsRequiredForForm="True" Margin="0,0,10,190"/>
+                <PasswordBox x:Name="txtPassword" Height="23" Margin="0,31,10,159" Controls:TextBoxHelper.Watermark="Password" AutomationProperties.IsRequiredForForm="True"/>
+                <Label Content="What to download:" HorizontalAlignment="Left" Margin="0,62,0,128"/>
+                <ComboBox x:Name="comboWhatToDownload" Margin="0,93,10,97" SelectionChanged="ComboBox_SelectionChanged" AutomationProperties.IsRequiredForForm="True">
+                    <ComboBoxItem Content="MyMusic"/>
+                    <ComboBoxItem Content="MyPlaylists"/>
+                </ComboBox>
+                <TextBox x:Name="txtPlaylistName" Height="23" Margin="0,124,10,66" TextWrapping="Wrap" Controls:TextBoxHelper.Watermark="Playlist name" IsReadOnly="True"/>
+                <TextBox x:Name="txtFolder" Height="23" Margin="0,155,90,35" TextWrapping="Wrap" AutomationProperties.IsRequiredForForm="True" Controls:TextBoxHelper.Watermark="Output Folder"/>
+                <Button x:Name="btnBrowse" Content="Browse" Margin="0,155,10,34" Click="BtnBrowse_Click" HorizontalAlignment="Right" Width="75"/>
+            </Grid>
+
+        </GroupBox>
+        <Button Content="Start" Margin="0,240,10,0" VerticalAlignment="Top" Click="Button_Click" HorizontalAlignment="Right" Width="75"/>
+        <RichTextBox x:Name="txtOutput" Margin="10,272,10,10">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label Content="Output:" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Controls:MetroWindow>
